@@ -27,6 +27,6 @@ module.exports = (app) => {
         //Removes last index
         res.json(noteList.slice(-1));
 
-
+    }); 
    
 };
