@@ -13,8 +13,8 @@ app.use(express.urlencoded({ extended: true}));
 app.use(express.static(__dirname + 'public'));
 app.use(express.static('./')); 
 
-require('./routes/routesAPI')(app);
-require('./routes/routesHTML')(app);
+require('./db/routes/routesApi.js')(app);
+require('./db/routes/routesHtml.js')(app);
 
 
 
