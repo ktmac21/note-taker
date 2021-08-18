@@ -1,14 +1,25 @@
-const path = require("path");
+const fs = require('fs');
 
 
-module.exports = (app) => {
-    //* GET `/notes` - Should return the `notes.html` file.
-    app.get("/notes", function (req, res) {
-        res.sendFile(path.join(__dirname, "./public/notes.html"));
+
+app.get('/notes', (req, res) =>
+    res.sendFile(path.join(__dirname, './public/index.html'))
+);
+
+app.get('/api/notes', (req, res) => {
+    res.json(`${req.method} request received`);
+});
+
+app.get('/api/notes/:note_id', (req, res) => {
+    if (req.body && req.params.notes_id) {
+        console.log(`${req.method} request received for note`);
+        const noteId = req.params.notes_id;
+        for (let i = 0; i < notes.length; i++) {
+            const currentNote = notes[i];
+            if (currentNote.note_id === noteId) {
+                res.json(currentNote);
+            }
+        }
+        res.json('Note ID not Found')
+    }
     });
-
-    //* GET `*` - Should return the `index.html` file
-    app.get("*", (req, res) => {
-        res.sendFile(path.join(__dirname, "./public/index.html"));
-    });
-}
