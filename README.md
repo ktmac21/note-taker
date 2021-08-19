@@ -12,6 +12,14 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ![](images/note.jpeg)
 
+App URL https://dry-scrubland-99210.herokuapp.com
+
+## Questions:
+
+You can find me on GitHub at: https://github.com/ktmac21
+
+If you have any questions you may contact me at: kteagles21@gmail.com
+
 
 
 
