@@ -1,6 +1,6 @@
 # HOMEWORK 11: Note-taker
 
-The goal of this week's homework was to complete the back-end functionality of a note-taker application using Node.js, Express.js, various npm packages, and then deploy the application live on Heroku. I had to create API routes that return HTML files, and that also save and retrieve data from a a JSON file. 
+The goal of this week's homework was to complete the back-end functionality of a note-taker application using Node.js, Express.js, various npm packages, and then deploy the application live on Heroku. I had to create API routes that return HTML files and that also save and retrieve data from a a JSON file. 
 
 # USER STORY:
 
