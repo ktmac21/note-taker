@@ -78,21 +78,21 @@ apiRoute.post('/notes/:note_id', (req, res) => {
 
 //Delete function route
 
-apiRoute.delete('/notes/:id', (req, res) => {
-    console.log(req.params);
-    fs.readFile('./db/db.json', function(error, data) {
-        if(error) {
-            throw error; 
-        } 
-        const parsedNotes = JSON.parse(data);
-        console.log(parsedNotes);
-        const newNotes = parsedNotes.filter(note => {
-            if (note.id !== req.params.id) {
-                return note;
-            }
-        }) 
-        console.log(newNotes); 
-    })
-}),
+// apiRoute.delete('/notes/:id', (req, res) => {
+//     console.log(req.params);
+//     fs.readFile('./db/db.json', function(error, data) {
+//         if(error) {
+//             throw error; 
+//         } 
+//         const parsedNotes = JSON.parse(data);
+//         console.log(parsedNotes);
+//         const newNotes = parsedNotes.filter(note => {
+//             if (note.id !== req.params.id) {
+//                 return note;
+//             }
+//         }) 
+//         console.log(newNotes); 
+    // })
+// }),
 
 module.exports = apiRoute;
